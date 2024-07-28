@@ -4,14 +4,80 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color:#EDE9DD  ;
+:root {
+--bg-color: rgba(255, 248, 241, 1);
+--header-color: rgba(221, 203, 185, 1);
+--footer-color: rgba(71, 34, 55, 1);
+--text-color: rgba(45, 32, 20, 1);
+--lg-img: url(./imagens/heartpat.png);
+--hover-color: rgba(71, 34, 55, .7)
 }
+
+.darkS {
+--bg-color: rgba(45, 32, 20, 1);
+--header-color: rgba(95, 73, 51, 1);
+--footer-color: rgba(193, 116, 172, 1);
+--text-color: rgba(255, 248, 241, 1);
+--lg-img: url(./imagens/darkS.png);
+--hover-color: rgba(193, 116, 172, .7);
+}
+
+
+body {
+  background: var(--bg-color);
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+
 
 header#logo {
-  background-color: #C9AC74;
+  background: var(--header-color);
+  font-weight: 500;
+
 }
 
+
+#pata {
+  text-align: left ;
+  margin: 10px 0px 8px 30px;
+}
+#lightpat {
+  text-align: left ;
+  margin: 10px 0px 8px 30px;
+}
+
+nav#menu ul {
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 9.5pt;
+  position: absolute;
+  top: 17.5px;
+  left: 300px;
+
+  
+
+}
+
+nav#menu li {
+  display: inline-block;
+  margin-right: 10px;
+
+}
+nav#menu a {
+  display: grid;
+  width: 130px;
+  height: 100px;
+  color: var(--text-color);
+  text-decoration: none;
+  padding-top: 42px;
+}
+nav#menu li:hover {
+background-color: var(--hover-color);
+transition: 1s;
+}
 #bemvindo {
   margin: 100px;
 }
